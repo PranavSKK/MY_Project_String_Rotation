@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-image: url("string.webp");
+    height: 100vh;
+}
+.main{
+    height: 8%;
+    width: 20%;
+    background-color: brown;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    left: 16.5em;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.left{
+    float: left;
+    width: 3%;
+    height: 6%;
+    background: greenyellow;
+    position: relative;
+    top: 17.5em;
+    left: 43.1em;
+    border:  2px solid black;
+
+}
+.right{
+    float: left;
+    width: 3%;
+    height: 6%;
+    background-color: red;
+    position: relative;
+    top: 15.2em;
+    left: 43em;
+    border:  2px solid black;
+    border-radius: 20px;
+}
+.string{
+    float: left;
+    width: 10%;
+    height: 10%;
+    background-color: bisque;
+    position: relative;
+    top: 5em;
+    left: 21.5em;
+    border:  2px solid black;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 600;
+    font-size:2rem ;
+    overflow: auto;
+    background-size: cover;
+    border-radius: 20px;
+    
+    
+
+}
+.full{
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+    font-size: 2rem;
+    background-color: palevioletred;
+}
+.submit{
+    background-color: aqua;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 20px;
+}

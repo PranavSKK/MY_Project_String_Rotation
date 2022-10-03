@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rotatestringme.css">
+</head>
+<body>
+    
+            <div class="container">
+                <div class="main">Rotating String</div>
+        
+                <div  class="left">
+                    <button class="full"id="left"><</button>
+                </div>
+
+                <div >
+                    <input class="submit" id="rotate" type="text"placeholder="enter a string" >
+                    <button class="submit"id="button">Submit</button>
+                </div>
+        
+                <div class="string"></div>
+        
+                <div class="right">
+                    <button class="full" id="right">></BUtton>
+                
+                </div>
+        
+                <script>
+                    count=''
+                    let leftk=document.querySelector("#left")
+                    let rightk=document.querySelector("#right")
+                    let display=document.querySelector(".string")
+                    let submitbtn=document.querySelector("#button")
+                    let inputbox=document.querySelector("#rotate")
+        
+        
+                    leftk.onclick=rotate
+                    rightk.onclick=rotate
+
+                    submitbtn.onclick=function(){
+                        userstring=inputbox.value
+                        
+                        display.innerText=userstring
+                    }
+                                                                                                        
+                    function rotate(e){
+                        let len=display.innerText
+                        let btn=e.target
+                        let disp=btn.innerText=='<'? (len[len.length-1]+len.slice(0,len.length-1)):(len.slice(1,len.length)+len[0])
+                        count=disp
+                        display.innerText=`${count}`       
+                    }
+ 
+        </script>
+    </div>
+</body>
+</html>
